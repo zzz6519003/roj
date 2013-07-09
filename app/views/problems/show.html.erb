@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @problem.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @problem.description %>
+</p>
+
+<p>
+  <strong>Input:</strong>
+  <%= @problem.input %>
+</p>
+
+<p>
+  <strong>Output:</strong>
+  <%= @problem.output %>
+</p>
+
+<p>
+  <strong>Sample input:</strong>
+  <%= @problem.sample_input %>
+</p>
+
+<p>
+  <strong>Sample output:</strong>
+  <%= @problem.sample_output %>
+</p>
+
+<p>
+  <strong>Hint:</strong>
+  <%= @problem.hint %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @problem.source %>
+</p>
+
+<p>
+  <strong>Time limit:</strong>
+  <%= @problem.time_limit %>
+</p>
+
+<p>
+  <strong>Memory limit:</strong>
+  <%= @problem.memory_limit %>
+</p>
+
+<p>
+  <strong>Accepted:</strong>
+  <%= @problem.accepted %>
+</p>
+
+<p>
+  <strong>Submit:</strong>
+  <%= @problem.submit %>
+</p>
+
+<%= link_to 'Edit', edit_problem_path(@problem) %> |
+<%= link_to 'Back', problems_path %>
