@@ -1,20 +1,11 @@
 <h1>Listing problems</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Title</th>
-      <th>Description</th>
-      <th>Input</th>
-      <th>Output</th>
-      <th>Sample input</th>
-      <th>Sample output</th>
-      <th>Hint</th>
-      <th>Source</th>
-      <th>Time limit</th>
-      <th>Memory limit</th>
-      <th>Accepted</th>
-      <th>Submit</th>
+      <th>AC/Submit</th>
       <th></th>
       <th></th>
       <th></th>
@@ -24,18 +15,9 @@
   <tbody>
     <% @problems.each do |problem| %>
       <tr>
+        <td><%= problem.id %></td>
         <td><%= problem.title %></td>
-        <td><%= problem.description %></td>
-        <td><%= problem.input %></td>
-        <td><%= problem.output %></td>
-        <td><%= problem.sample_input %></td>
-        <td><%= problem.sample_output %></td>
-        <td><%= problem.hint %></td>
-        <td><%= problem.source %></td>
-        <td><%= problem.time_limit %></td>
-        <td><%= problem.memory_limit %></td>
-        <td><%= problem.accepted %></td>
-        <td><%= problem.submit %></td>
+        <td><%= problem.accepted %>/<%= problem.submit %></td>
         <td><%= link_to 'Show', problem %></td>
         <td><%= link_to 'Edit', edit_problem_path(problem) %></td>
         <td><%= link_to 'Destroy', problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
