@@ -8,7 +8,48 @@
 </head>
 <body>
 
+<!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Roj</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="/">Home</a>
+              </li>
+              <li class="">
+                <%= link_to 'Problems', problems_path %>
+              </li>
+              <li class="">
+                <%= link_to 'Status', problems_path %>
+              </li>
+              <li class="">
+                <%= link_to 'Contests', problems_path %>
+              </li>
+              <li class="">
+                <%= link_to 'RankList', problems_path %>
+              </li>
+              <li class="">
+                <%= link_to 'RankList', problems_path %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Placeholder
+    ================================================== -->
+    <div class="container">
+      <div style="height: 50px"></div>
+    </div>
+
+<!-- Main
+    ================================================== -->
+    <div class="container">
 <%= yield %>
+    </div>
 
 </body>
 </html>

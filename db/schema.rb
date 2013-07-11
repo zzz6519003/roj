@@ -14,18 +14,18 @@
 ActiveRecord::Schema.define(version: 20130709160150) do
 
   create_table "problems", force: true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.text     "input"
-    t.text     "output"
-    t.text     "sample_input"
-    t.text     "sample_output"
-    t.text     "hint"
-    t.text     "source"
-    t.integer  "time_limit"
-    t.integer  "memory_limit"
-    t.integer  "accepted"
-    t.integer  "submit"
+    t.string   "title",         default: "", null: false
+    t.text     "description",   default: ""
+    t.text     "input",         default: ""
+    t.text     "output",        default: ""
+    t.text     "sample_input",  default: ""
+    t.text     "sample_output", default: ""
+    t.text     "hint",          default: ""
+    t.text     "source",        default: ""
+    t.integer  "time_limit",    default: 1,  null: false
+    t.integer  "memory_limit",  default: 16, null: false
+    t.integer  "accepted",      default: 0
+    t.integer  "submit",        default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

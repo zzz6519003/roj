@@ -16,6 +16,14 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
+    <%= f.label :time_limit %><br>
+    <%= f.number_field :time_limit %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_limit %><br>
+    <%= f.number_field :memory_limit %>
+  </div>
+  <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
@@ -38,26 +46,6 @@
   <div class="field">
     <%= f.label :hint %><br>
     <%= f.text_area :hint %>
-  </div>
-  <div class="field">
-    <%= f.label :source %><br>
-    <%= f.text_area :source %>
-  </div>
-  <div class="field">
-    <%= f.label :time_limit %><br>
-    <%= f.number_field :time_limit %>
-  </div>
-  <div class="field">
-    <%= f.label :memory_limit %><br>
-    <%= f.number_field :memory_limit %>
-  </div>
-  <div class="field">
-    <%= f.label :accepted %><br>
-    <%= f.number_field :accepted %>
-  </div>
-  <div class="field">
-    <%= f.label :submit %><br>
-    <%= f.number_field :submit %>
   </div>
   <div class="actions">
     <%= f.submit %>
