@@ -1,64 +1,40 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @problem.title %>
+<h1 class="text-center"><%= @problem.id %> - <%= @problem.title %></h1>
+
+<p class="text-center">
+  <span class="label label-important">Time limit: <%= @problem.time_limit %>s</span>
+  <span class="label label-important">Memory limit: <%= @problem.memory_limit %>MB</span>
+  <span class="label label-success">Accepted: <%= @problem.accepted %></span>
+  <span class="label label-inverse">Submit: <%= @problem.submit %></span>
 </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @problem.description %>
-</p>
+<dl>
+  <dt>Description:</dt>
+  <dd><%= @problem.description %></dd>
+</dl>
 
-<p>
-  <strong>Input:</strong>
-  <%= @problem.input %>
-</p>
+<dl>
+  <dt>Input:</dt>
+  <dd><%= @problem.input %></dd>
+</dl>
 
-<p>
-  <strong>Output:</strong>
-  <%= @problem.output %>
-</p>
+<dl>
+  <dt>Output:</dt>
+  <dd><%= @problem.output %></dd>
+</dl>
 
-<p>
-  <strong>Sample input:</strong>
-  <%= @problem.sample_input %>
-</p>
+<dl>
+  <dt>Sample input:</dt>
+  <dd><%= @problem.sample_input %></dd>
+</dl>
 
-<p>
-  <strong>Sample output:</strong>
-  <%= @problem.sample_output %>
-</p>
+<dl>
+  <dt>Sample output:</dt>
+  <dd><%= @problem.sample_output %></dd>
+</dl>
 
-<p>
-  <strong>Hint:</strong>
-  <%= @problem.hint %>
-</p>
-
-<p>
-  <strong>Source:</strong>
-  <%= @problem.source %>
-</p>
-
-<p>
-  <strong>Time limit:</strong>
-  <%= @problem.time_limit %>
-</p>
-
-<p>
-  <strong>Memory limit:</strong>
-  <%= @problem.memory_limit %>
-</p>
-
-<p>
-  <strong>Accepted:</strong>
-  <%= @problem.accepted %>
-</p>
-
-<p>
-  <strong>Submit:</strong>
-  <%= @problem.submit %>
-</p>
-
-<%= link_to 'Edit', edit_problem_path(@problem) %> |
-<%= link_to 'Back', problems_path %>
+<dl>
+  <dt>Hint:</dt>
+  <dd><%= @problem.hint %></dd>
+</dl>
