@@ -42,10 +42,26 @@
       <div style="height: 50px"></div>
     </div>
 
+    <div class="container">
+<!-- Notice/Alert Bar
+    ================================================== -->
+<% if notice %>
+    <div class="alert alert-block alert-warning fade in">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <p id="notice"><%= notice %></p>
+    </div>
+<% end %>
+<% if notice %>
+    <div class="alert alert-block alert-error fade in">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <p id="alert"><%= alert %></p>
+    </div>
+<% end %>
+
 <!-- Main
     ================================================== -->
-    <div class="container">
 <%= yield %>
+
     </div>
 
 </body>
