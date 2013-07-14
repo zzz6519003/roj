@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise', '~> 1.5.4'
 gem 'cancan', '~> 1.6.10'
+gem 'protected_attributes' # fix rake 10.1.0 issue
 
 group :doc do
   gem 'sdoc', require: false # bundle exec rake doc:rails generates the API under doc/api.
