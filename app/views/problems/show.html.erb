@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="text-center"><%= @problem.id %> - <%= @problem.title %></h1>
+<h1 class="text-center"><%= id_format(@problem.id) %> - <%= @problem.title %></h1>
 
 <p class="text-center">
   <span class="label label-important">Time limit: <%= @problem.time_limit %>s</span>

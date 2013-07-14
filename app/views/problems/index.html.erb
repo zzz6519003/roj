@@ -11,7 +11,7 @@
   <tbody>
     <% @problems.each do |problem| %>
       <tr>
-        <td><%= problem.id %></td>
+        <td><%= id_format(problem.id) %></td>
         <td><%= link_to problem.title, problem %></td>
         <td><%= problem.accepted %>/<%= problem.submit %></td>
         <td><%= problem.getRate %></td>
