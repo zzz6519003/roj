@@ -13,24 +13,24 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">Roj</a>
+          <a class="brand" href="/"><%= t('Roj') %></a>
           <div class="nav-collapse collapse">
             <!-- Main Navbar -->
             <ul class="nav">
               <li class="">
-                <a href="/">Home</a>
+                <a href="/"><%= t('Home') %></a>
               </li>
               <li class="">
-                <%= link_to 'Problems', problems_path %>
+                <%= link_to t('Problems'), problems_path %>
               </li>
               <li class="">
-                <%= link_to 'Status', problems_path %>
+                <%= link_to t('Status'), problems_path %>
               </li>
               <li class="">
-                <%= link_to 'Contests', problems_path %>
+                <%= link_to t('Contests'), problems_path %>
               </li>
               <li class="">
-                <%= link_to 'RankList', problems_path %>
+                <%= link_to t('RankList'), problems_path %>
               </li>
             </ul>
 
@@ -41,14 +41,14 @@
                 <%= link_to current_user.nickname, edit_user_registration_path %>
               </li>
               <li class="">
-                <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                <%= link_to t("Sign out"), destroy_user_session_path, :method => :delete %>
               </li>
 <% else %>
               <li class="">
-                <%= link_to "Sign in", new_user_session_path %>
+                <%= link_to t("Sign in"), new_user_session_path %>
               </li>
               <li class="">
-                <%= link_to "Sign up", new_user_registration_path %>
+                <%= link_to t("Sign up"), new_user_registration_path %>
               </li>
 <% end %>
             </ul>
