@@ -15,6 +15,7 @@
         <div class="container">
           <a class="brand" href="/">Roj</a>
           <div class="nav-collapse collapse">
+            <!-- Main Navbar -->
             <ul class="nav">
               <li class="">
                 <a href="/">Home</a>
@@ -31,6 +32,25 @@
               <li class="">
                 <%= link_to 'RankList', problems_path %>
               </li>
+            </ul>
+
+            <!-- Right Navbar -->
+            <ul class="nav pull-right">
+<% if user_signed_in? %>
+              <li class="">
+                <%= link_to current_user.nickname, edit_user_registration_path %>
+              </li>
+              <li class="">
+                <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+              </li>
+<% else %>
+              <li class="">
+                <%= link_to "Sign in", new_user_session_path %>
+              </li>
+              <li class="">
+                <%= link_to "Sign up", new_user_registration_path %>
+              </li>
+<% end %>
             </ul>
           </div>
         </div>
@@ -51,7 +71,7 @@
       <p id="notice"><%= notice %></p>
     </div>
 <% end %>
-<% if notice %>
+<% if alert %>
     <div class="alert alert-block alert-error fade in">
       <button type="button" class="close" data-dismiss="alert">×</button>
       <p id="alert"><%= alert %></p>
