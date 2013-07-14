@@ -3,6 +3,7 @@
     <tr>
       <th>ID</th>
       <th>Title</th>
+      <th>Source</th>
       <th>AC/Submit</th>
       <th>Rate</th>
     </tr>
@@ -13,6 +14,7 @@
       <tr>
         <td><%= id_format(problem.id) %></td>
         <td><%= link_to problem.title, problem %></td>
+        <td><%= null_string_replace(problem.source) %></td>
         <td><%= problem.accepted %>/<%= problem.submit %></td>
         <td><%= problem.getRate %></td>
       </tr>
