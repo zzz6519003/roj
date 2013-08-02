@@ -9,7 +9,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'devise', '~> 1.5.4'
+gem 'devise', '~> 3.0.0.rc'
 gem 'protected_attributes' # fix rake 10.1.0 issue
 
 group :doc do
