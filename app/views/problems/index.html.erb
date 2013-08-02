@@ -16,7 +16,7 @@
         <td><%= link_to problem.title, problem %></td>
         <td><%= null_string_replace(problem.source) %></td>
         <td><%= problem.accepted %>/<%= problem.submit %></td>
-        <td><%= problem.getRate %></td>
+        <td><%= "%.2f" % [problem.getAcceptedRate] %>%</td>
       </tr>
     <% end %>
   </tbody>

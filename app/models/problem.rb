@@ -7,10 +7,12 @@ class Problem < ActiveRecord::Base
     greater_than_or_equal_to: 0,
   }
 
-  def getRate()
-    ret = 0
-    ret = self.accepted.to_f/self.submit.to_f*100 if (not self.accepted.nil?) and (not self.submit.nil?)
+  def getAcceptedRate()
+    ret = 0.0
+    if (not self.accepted.nil?) and (not self.submit.nil?) and (not self.submit == 0)
+      ret = self.accepted/self.submit.to_f*100 
+    end
 
-    return "#{ret}%"
+    return ret # return percent of accepted rate
   end
 end
