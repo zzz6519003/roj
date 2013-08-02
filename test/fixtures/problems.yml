@@ -1,18 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  title: MyString
-  description: MyText
-  input: MyText
-  output: MyText
-  sample_input: MyText
-  sample_output: MyText
-  hint: MyText
-  source: MyText
+simpleProblem:
+  title: simple_title
+  description: simple_description
+  input: simple_input
+  output: simple_output
+  sample_input: simple_sample_input
+  sample_output: simple_sample_output
+  hint: simple_hint
+  source: simple_source
   time_limit: 1
   memory_limit: 1
-  accepted: 1
-  submit: 1
+  accepted: 0
+  submit: 0
 
 two:
   title: MyString
